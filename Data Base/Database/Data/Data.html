@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Base</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <form action="creat">
@@ -13,7 +15,7 @@
         <input type="submit">
     </form>
   
-    
+    <h1>hello</h1>
  
     <table border="1px">
         {% for i in all %}
@@ -23,6 +25,7 @@
             <td>{{i.surname}}</td>
             <td><a href="delete?deleteid={{i.id}}">delete</a></td>
             <td><a href="Edit?Editid={{i.id}}">Edit</a></td>
+            <!-- <a href="creat">about us</a> -->
         </tr>
         {% endfor %}
     </table>
