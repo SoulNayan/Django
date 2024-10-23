@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="creat">
+        <input type="text" name="id" value="{% if id %}{{id.id}}{% endif %}" hidden>
+        <input type="text" name="name" value="{% if id %}{{id.name}}{% endif %}">
+        <input type="text" name="surname" value="{% if id %}{{id.surname}}{%endif%}">
+        <input type="submit">
+    </form>
+  
+    
+ 
+    <table border="1px">
+        {% for i in all %}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.surname}}</td>
+            <td><a href="delet?deleteid={{i.id}}">delete</a></td>
+            <td><a href="edit?Editid={{i.id}}">Edit</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
+<!-- crud
+crete
+read
+update
+delete -->

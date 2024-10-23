@@ -1,0 +1,36 @@
+* First copy this in folder command panle:
+  "django-admin startproject ""project""<----You Can type any name Here
+
+*Create app by This Command: <---- type this in vs code to create polls folder
+ "py manage.py startapp polls"
+
+*After opening the vs code copy URL from Project to polls and in project settings file add "polls" app in installed app.
+
+*After creating polls folder go to settings and installed_apps and add "polls" in there.
+
+*Then use "include" in project to include the url to "polls"
+ ""from django.contrib import admin
+from django.urls import path,"include"<----Add This
+
+urlpatterns = [
+    "path("",include('polls.urls')),"<----Add This
+    path('admin/', admin.site.urls),
+]""
+
+*Then Import This Command In Polls urls.
+ "from . import views"
+
+*To run This Server Type This Command.
+ "py manage.py runserver"
+
+*Connect HTML Folder.
+Creat a folder and Html File.
+Go to Setting And "import os" type this command in import section then after in "DIRS" 
+connect The Html path
+ex. "os.path.join(BASE_DIR,'Folder Name')"
+
+*Now we will connect data base to vs code.
+"python manage.py makemigrations"<---- First Type This command
+"python manage.py migrate"<---- After This
+
+

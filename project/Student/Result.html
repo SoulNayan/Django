@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Marks</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        th {
+            background-color: grey;
+        }
+        h1, p {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <form action="get" style="text-align: center; margin-top: 20px;">
+        <input type="text" name="username" placeholder="Enter Name">
+        <input type="text" name="sub1" placeholder="MATHEMATICS">
+        <input type="text" name="sub2" placeholder="PHYSICS">
+        <input type="text" name="sub3" placeholder="CHEMISTRY">
+        <input type="text" name="sub4" placeholder="ENGLISH">
+        <input type="text" name="sub5" placeholder="SCIENCE">
+        <input type="text" name="sub6" placeholder="BIOLOGY">
+        <input type="submit">
+    </form>
+
+    <table>
+        <tr>
+            <td colspan="10">
+                <p>Certificate showing the number of marks obtained by Shri/Smt/Kumari</p>
+                <p>of <b>SIR P.T. SARVAJANIK COLLEGE OF SCIENCE, SURAT</b></p>
+                <p>in each head of passing at the <b>BACHELOR OF SCIENCE (FIFTH SEMESTER)</b> held in <b>APRIL, 2016</b></p>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Student Details</th>
+        </tr>
+        <tr>
+            <td>Student Name</td>
+            <td><b>{{Name}}</b></td>
+        </tr>
+        <tr>
+            <td>College Web Page</td>
+            <td><a href="http://www.sarvajanikcollegeofscience.com" target="_blank">www.sarvajanikcollegeofscience.com</a></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+            <th>Min Marks</th>
+            <th>Max Marks</th>
+            <th>Marks Obtained</th>
+            <th>Remarks</th>
+        </tr>
+        <tr align="center">
+            <td>SUB 1</td>
+            <td>MATHEMATICS</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub1M}}</td>
+            <td>{{subR1}}</td>
+        </tr>
+        <tr align="center">
+            <td>SUB 2</td>
+            <td>PHYSICS</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub2M}}</td>
+            <td>{{subR2}}</td>
+        </tr>
+        <tr align="center">
+            <td>SUB 3</td>
+            <td>CHEMISTRY</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub3M}}</td>
+            <td>{{subR3}}</td>
+        </tr>
+        <tr align="center">
+            <td>SUB 4</td>
+            <td>ENGLISH</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub4M}}</td>
+            <td>{{subR4}}</td>
+        </tr>
+        <tr align="center">
+            <td>SUB 5</td>
+            <td>SCIENCE</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub5M}}</td>
+            <td>{{subR5}}</td>
+        </tr>
+        <tr align="center">
+            <td>SUB 6</td>
+            <td>BIOLOGY</td>
+            <td>{{Min}}</td>
+            <td>100</td>
+            <td>{{sub6M}}</td>
+            <td>{{subR6}}</td>
+        </tr>
+        <tr align="center">
+            <td colspan="3"><h2 style="margin: 0;"><b>Total</b></h2></td>
+            <td>600</td>
+            <td><b>{{Total}}</b></td>
+            <td><b>{{Percentage}}%</b></td>
+        </tr>
+    </table>
+</body>
+</html>
