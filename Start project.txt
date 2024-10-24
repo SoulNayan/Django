@@ -32,5 +32,3 @@ ex. "os.path.join(BASE_DIR,'Folder Name')"
 *Now we will connect data base to vs code.
 "python manage.py makemigrations"<---- First Type This command
 "python manage.py migrate"<---- After This
-
-
